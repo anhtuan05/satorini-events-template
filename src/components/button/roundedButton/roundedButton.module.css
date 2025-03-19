@@ -1,0 +1,67 @@
+.roundedBtn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+    transition: all 0.3s ease;
+    background: var(--primaryButton);
+    color: var(--textSecBtn);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover Scale */
+.scale:hover {
+    transform: scale(1.1);
+}
+
+/* Hover Rotate */
+.rotate:hover {
+    transform: rotate(-5deg);
+}
+
+/* Glowing Border */
+.glow {
+    box-shadow: 0 0 0 rgba(0, 123, 255, 0.5);
+    animation: pulseGlow 2s infinite;
+}
+
+@keyframes pulseGlow {
+    0% {
+        box-shadow: 0 0 0 rgba(0, 123, 255, 0.5);
+    }
+
+    50% {
+        box-shadow: 0 0 20px rgba(0, 123, 255, 0.8);
+    }
+
+    100% {
+        box-shadow: 0 0 0 rgba(0, 123, 255, 0.5);
+    }
+}
+
+/* Pulse Effect */
+.pulse {
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.roundedBtn a {
+    text-decoration: none;
+}

@@ -1,0 +1,51 @@
+.contact {
+    background: var(--contact-bg);
+    color: var(--contact-text);
+    text-align: center;
+    padding: 60px 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px var(--contact-shadow);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    color: var(--contact-heading);
+}
+
+.contact p {
+    font-size: 1.2rem;
+    color: var(--contact-subtext);
+    margin-bottom: 20px;
+}
+
+/* Light Theme */
+[data-theme="light"] .contact {
+    --contact-bg: #f9f9f9;
+    --contact-text: #222;
+    --contact-heading: #111;
+    --contact-subtext: #555;
+    --contact-shadow: rgba(0, 0, 0, 0.1);
+    --contact-shadow-hover: rgba(0, 0, 0, 0.2);
+}
+
+/* Dark Theme */
+[data-theme="dark"] .contact {
+    --contact-bg: #222;
+    --contact-text: #ddd;
+    --contact-heading: #fff;
+    --contact-subtext: #bbb;
+    --contact-shadow: rgba(255, 255, 255, 0.1);
+    --contact-shadow-hover: rgba(255, 255, 255, 0.2);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .contact h2 {
+        font-size: 1.5em;
+    }
+}

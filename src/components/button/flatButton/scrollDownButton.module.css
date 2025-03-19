@@ -1,0 +1,34 @@
+.scrollDownButton {
+    width: 40px;
+    height: 40px;
+    color: var(--thirdText);
+    margin: 0 auto;
+    background-color: #0057b300;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1000;
+    animation: pulse 1.5s infinite ease-in-out;
+    transition: background-color 0.3s ease;
+}
+
+.arrow {
+    width: 24px;
+    height: 24px;
+    animation: bounce 0.8s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(5px);
+    }
+}

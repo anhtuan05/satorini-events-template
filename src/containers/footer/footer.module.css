@@ -1,0 +1,83 @@
+.footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 50px 0;
+    font-size: 14px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 10%;
+    gap: 20px;
+}
+
+/* Logo Section */
+.logoSection h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.logoSection p {
+    margin: 5px 0;
+    opacity: 0.8;
+}
+
+/* Policy Section */
+.policySection h3,
+.socialSection h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.policySection ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.policySection li {
+    margin-bottom: 8px;
+}
+
+.policySection a {
+    color: white;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.policySection a:hover {
+    opacity: 1;
+}
+
+/* Social Section */
+.socialIcons {
+    display: flex;
+    gap: 15px;
+}
+
+.socialIcons a {
+    color: white;
+    font-size: 18px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.socialIcons a:hover {
+    transform: translateY(-3px);
+    opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .socialIcons {
+        justify-content: center;
+    }
+}
